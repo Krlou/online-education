@@ -1,0 +1,33 @@
+.contactButton {
+  width: 46px;
+  height: 46px;
+  background-color: #41bea9;
+  border: 1px solid #41bea9;
+  border-radius: 50%;
+  margin: 0 8px;
+  text-align: center;
+  /*grid container*/
+  display: grid;
+}
+
+.contactButton:hover {
+  /*zoom in animation*/
+  cursor: pointer;
+  transform: scale(1.2);
+  /*circle border animation*/
+  transition: transform 0.5s ease-in;
+  border-top-color: #fff;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+  transition: border-top-color 0.1s ease-in, border-right-color 0.1s linear 0.1s,
+    border-bottom-color 0.1s linear 0.2s, border-left-color 0.1s linear 0.3s;
+}
+
+.contactButton img {
+  width: 24px;
+  height: 24px;
+  /*grid item*/
+  justify-self: center;
+  align-self: center;
+}

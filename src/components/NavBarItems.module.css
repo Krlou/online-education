@@ -1,0 +1,11 @@
+.navBarItems {
+  list-style: none;
+  color: #706f72;
+  font-size: 16px;
+  margin-right: 64px;
+}
+
+.navBarItems a {
+  text-decoration: none;
+  color: #706f72;
+}

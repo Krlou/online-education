@@ -1,0 +1,55 @@
+.table {
+  margin-left: 64px;
+  color: #fff;
+  font-size: 20px;
+  border-collapse: collapse;
+}
+
+.table thead {
+  border-bottom: 1px solid #fff;
+  text-align: left;
+}
+
+.tableHeader th {
+  position: sticky;
+  top: 0;
+  background-color: #26262a;
+}
+
+.table th,
+.table td {
+  margin: 0 16px;
+  padding: 0 16px;
+}
+
+.table tbody > tr:hover {
+  background-color: #706f72;
+}
+
+.table a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*scrollbar styles*/
+/* width */
+.scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.scroll::-webkit-scrollbar-track {
+  background: #706f72;
+  border-radius: 10px;
+}
+
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+  background: #41bea9;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #41bea9;
+}

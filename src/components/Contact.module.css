@@ -1,0 +1,10 @@
+.contact {
+  width: 100vw;
+  position: absolute;
+  bottom: 30px;
+  /*flex container element*/
+  display: flex;
+  justify-content: center;
+  /*to suspense horizontal scroll*/
+  max-width: 100%;
+}

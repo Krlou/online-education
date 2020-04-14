@@ -1,0 +1,13 @@
+.logoutItem {
+  display: inline-block;
+  margin: 16px;
+}
+
+.logoutItem:hover {
+  cursor: pointer;
+}
+
+.logoutItem a {
+  color: #706f72;
+  text-decoration: none;
+}

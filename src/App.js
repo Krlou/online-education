@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import HomePage from "./components/HomePage";
+import Header from "./components/Header";
+import Contact from "./components/Contact";
+import UserHome from "./components/UserHome";
+
+//code splitting: lazy loading
+import asyncComponent from "./components/asyncComponent";
+const AsyncBookPage = asyncComponent(() => {
+  return import("./components/BookPage");
+});
+
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/book/:title" component={AsyncBookPage} />
+          <Route path="/home" component={UserHome} />
+        </Switch>
+        <Contact />
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

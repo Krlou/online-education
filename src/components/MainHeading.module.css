@@ -1,0 +1,8 @@
+.mainHeading {
+  width: 100vw;
+  height: calc(100vh - 85.6px);
+  z-index: 100;
+  background-color: #26262a;
+  /*to suspense horizontal scroll*/
+  max-width: 100%;
+}

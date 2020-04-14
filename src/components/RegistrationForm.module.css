@@ -1,0 +1,24 @@
+.registerForm {
+  margin-left: 64px;
+  /*flex container element*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formHeading {
+  margin-bottom: 16px;
+}
+
+.signin {
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+}
+
+.signin span {
+  font-weight: bold;
+  color: #41bea9;
+  cursor: pointer;
+}

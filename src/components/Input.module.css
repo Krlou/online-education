@@ -1,0 +1,25 @@
+.formElem {
+  border-bottom: 1px solid #fff;
+}
+
+.formElem input {
+  width: 300px;
+  background-color: #26262a;
+  border: none;
+  font-size: 16px;
+  padding: 0 4px;
+  color: #fff;
+}
+
+.formElem input::placeholder {
+  color: #fff;
+}
+
+.formElem input:focus {
+  outline: none;
+}
+
+.formElem img {
+  height: 12px;
+  width: 12px;
+}

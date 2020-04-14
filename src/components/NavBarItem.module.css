@@ -1,0 +1,12 @@
+.navBarItem {
+  display: inline-block;
+  margin: 16px;
+}
+
+.navBarItem:hover {
+  cursor: pointer;
+}
+
+.active {
+  color: #fff;
+}
