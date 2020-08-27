@@ -13,6 +13,7 @@ const AsyncBookPage = asyncComponent(() => {
 });
 
 class App extends Component {
+  //some comment...
   render() {
     return (
       <BrowserRouter>
